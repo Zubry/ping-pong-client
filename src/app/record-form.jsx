@@ -82,7 +82,7 @@ export default class RecordForm extends React.Component {
           </div>
         </div>
         <div>
-          <Button loading={this.state.loading} success={this.state.success}>Submit</Button>
+          <Button loading={this.state.loading} success={this.state.success}><i className="fas fa-table-tennis"></i></Button>
         </div>
         {
           !this.state.loading && !this.state.success && (
