@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Text from './components/text';
 import Label from './components/label';
+import Button from './components/button';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Label for="loser">Loser</Label>
       <div>
         <Text id="loser" name="loser"/>
+      </div>
+      <div>
+        <Button>Submit</Button>
       </div>
     </div>
   );
