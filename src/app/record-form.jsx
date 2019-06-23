@@ -46,6 +46,13 @@ export default class RecordForm extends React.Component {
       return false;
     }
 
+    if (this.state.winner.length > 32 || this.state.loser.length > 32) {
+      this.setState({ loading: false, success: false })
+
+      event.preventDefault();
+      return false;
+    }
+
     fetch('http://localhost:8000/match', {
       method: 'post',
       mode: 'cors',

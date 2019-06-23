@@ -1,5 +1,15 @@
 import React from 'react';
+import styled from 'styled-components'
+import { Link } from "react-router-dom";
 import { Table, TR, TH, TD } from '../components/table';
+
+const StyledLink = styled(Link)`
+  color: #75434D;
+
+  &:hover {
+    color: #5c353d;
+  }
+`
 
 export default class EloTable extends React.Component {
   constructor(props) {
@@ -41,7 +51,7 @@ export default class EloTable extends React.Component {
               Object.entries(this.state.results.response)
                 .sort(([_0, a], [_1, b]) => b - a)
                 .slice(0, 100)
-                .map(([player, score]) => <TR><TD>{player}</TD><TD>{score}</TD></TR>)
+                .map(([player, score]) => <TR><TD><StyledLink to={`/player/${player}`}>{player}</StyledLink></TD><TD>{score}</TD></TR>)
             }
           </tbody>
         </Table>
