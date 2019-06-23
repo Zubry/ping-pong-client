@@ -6,6 +6,8 @@ const Input = styled.input`
   padding: 0.5rem;
   border: 0;
   position: relative;
+  font-family: 'Mukta', sans-serif;
+  color: #2A1C1F;
 
   &:focus {
     outline: none;
