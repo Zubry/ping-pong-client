@@ -6,11 +6,15 @@ import Label from './components/label';
 import Button from './components/button';
 import Form from './components/form';
 import Container from './components/container';
+import Heading from './components/heading';
+import P from './components/p';
 
 function App() {
   return (
     <div className="App">
       <Container>
+        <Heading>Ping-pong</Heading>
+        <P>Record the results of your ping-pong game</P>
         <Form>
           <div>
             <Label for="winner">Winner</Label>
