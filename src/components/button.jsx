@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default styled.button`
+const Button = styled.button`
   height: 36px;
   overflow-x: hidden;
   background-color: #75434D;
@@ -22,3 +22,11 @@ export default styled.button`
     transition: 0.2s ease;
   }
 `;
+
+export default (props) => (
+  props.loading
+  ? <Button {...props}><i className="fas fa-spinner fa-spin"></i></Button>
+  : props.success
+  ? <Button {...props}>{props.children}</Button>
+  : <Button {...props}>{props.children}</Button>
+)
