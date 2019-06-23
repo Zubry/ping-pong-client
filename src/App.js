@@ -7,8 +7,14 @@ import Label from './components/label';
 function App() {
   return (
     <div className="App">
-      <Label>Winner</Label>
-      <Text/>
+      <Label for="winner">Winner</Label>
+      <div>
+        <Text id="winner" name="winner"/>
+      </div>
+      <Label for="loser">Loser</Label>
+      <div>
+        <Text id="loser" name="loser"/>
+      </div>
     </div>
   );
 }

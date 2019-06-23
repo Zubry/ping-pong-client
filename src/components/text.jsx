@@ -8,6 +8,7 @@ const Input = styled.input`
   position: relative;
   font-family: 'Mukta', sans-serif;
   color: #2A1C1F;
+  background-color: white;
 
   &:focus {
     outline: none;
@@ -47,9 +48,9 @@ const InputBorder = styled.span`
   width: 0%;
 `;
 
-export default () => (
+export default ({...props}) => (
   <InputWrapper>
-    <Input type="text" />
+    <Input type="text" {...props}/>
     <InputBorder />
   </InputWrapper>
 )
