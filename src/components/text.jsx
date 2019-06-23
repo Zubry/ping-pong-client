@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Input = styled.input`
-  font-size: 18px;
   padding: 0.5rem;
   border: 0;
   position: relative;
@@ -26,7 +25,7 @@ const InputWrapper = styled.div`
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: transparent;
+    background-color: #dccbcf;
     z-index: 10;
   }
 

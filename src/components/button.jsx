@@ -10,6 +10,7 @@ export default styled.button`
   color: #f4eeef;
   font-family: 'Lato', sans-serif;
   transition: 0.2s ease;
+  cursor: pointer;
 
   &:hover {
     background-color: #693c45;
