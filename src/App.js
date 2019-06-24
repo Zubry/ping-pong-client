@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import Index from './pages/index';
 import Elo from './pages/elo';
+import Player from './pages/player';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
         <Route exact path="/" component={Index} />
         <Route exact path="/elo" component={Elo} />
+        <Route exact path="/player/:player" component={Player} />
       </div>
     </Router>
   );
