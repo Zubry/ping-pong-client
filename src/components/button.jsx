@@ -23,10 +23,10 @@ const Button = styled.button`
   }
 `;
 
-export default (props) => (
-  props.loading
+export default ({ loading, success, ...props}) => (
+  loading
   ? <Button {...props}><i className="fas fa-spinner fa-spin"></i></Button>
-  : props.success
+  : success
   ? <Button {...props}>{props.children}</Button>
   : <Button {...props}>{props.children}</Button>
 )

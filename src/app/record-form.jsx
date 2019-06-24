@@ -77,13 +77,13 @@ export default class RecordForm extends React.Component {
     return (
       <Form onSubmit={this.handleSubmit}>
         <div>
-          <Label for="winner">Winner</Label>
+          <Label htmlFor="winner">Winner</Label>
           <div>
             <Text id="winner" name="winner" onChange={this.handleChangeWinner} value={this.state.winner}/>
           </div>
         </div>
         <div>
-          <Label for="loser">Loser</Label>
+          <Label htmlFor="loser">Loser</Label>
           <div>
             <Text id="loser" name="loser" onChange={this.handleChangeLoser} value={this.state.loser}/>
           </div>

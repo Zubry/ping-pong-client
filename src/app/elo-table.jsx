@@ -51,7 +51,7 @@ export default class EloTable extends React.Component {
               Object.entries(this.state.results.response)
                 .sort(([_0, a], [_1, b]) => b - a)
                 .slice(0, 100)
-                .map(([player, score]) => <TR><TD><StyledLink to={`/player/${player}`}>{player}</StyledLink></TD><TD>{score}</TD></TR>)
+                .map(([player, score]) => <TR key={player}><TD><StyledLink to={`/player/${player}`}>{player}</StyledLink></TD><TD>{score}</TD></TR>)
             }
           </tbody>
         </Table>
